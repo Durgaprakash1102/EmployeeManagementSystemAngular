@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 align="center"><u>Add Project </u></h1>
+    <form id="projectForm" name="addproject">
+        <div class="project">
+            Project Id : <input type="text" id="pjtid" name="projectId" [(ngModel)]="project.projectId"> <br> <br> Project Name :<input type="text" name="projectName" id="pjtname" [(ngModel)]="project.projectName"> <br> <br> Project Start Date :
+            <input
+                type="text" name="startDate" id="startdate" [(ngModel)]="project.startDate"> <br> <br> Project End Date :<input type="text" name="endDate" id="enddate" [(ngModel)]="project.endDate"> <br> <br>
+                <input type="button" Value="ADD PROJECT" (click)="addProject()">
+        </div>
+    </form>
+    {{msg}}
+</div>

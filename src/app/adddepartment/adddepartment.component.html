@@ -1,0 +1,12 @@
+<div>
+    <div class="container1">
+        <h1 align="center"><u>Add Department</u></h1>
+        <form id="departmentForm" name="adddepartment">
+            <div class="department">
+                Department Id : <input type="text" id="dptid" name="departmentId" [(ngModel)]="department.departmentId"> <br> <br> Department Name : <input type="text" id="dptname" name="departmentName" [(ngModel)]="department.departmentName"> <br> <br>                Location : <input type="text" id="location" name="location" [(ngModel)]="department.location"> <br> <br>
+                <input type="button" Value="ADD Department" (click)="addDepartment()">
+            </div>
+        </form>
+        {{msg}}
+    </div>
+</div>

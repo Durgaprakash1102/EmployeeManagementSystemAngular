@@ -1,0 +1,21 @@
+<div>
+    <h2 align="center">Project Details Table</h2>
+    <table border="5" align="center">
+        <thead>
+            <tr>
+                <th>ProjectId</th>
+                <th>ProjectName</th>
+                <th>Project StartDate</th>
+                <th>Project EndDate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let project of projects">
+                <td>{{project.projectId}}</td>
+                <td>{{project.projectName}}</td>
+                <td>{{project.startDate}}</td>
+                <td>{{project.endDate}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

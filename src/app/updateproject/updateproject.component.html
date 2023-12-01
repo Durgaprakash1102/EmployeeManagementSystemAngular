@@ -1,0 +1,11 @@
+<div class="container">
+    <h1 align="center"><u>Update Project </u></h1>
+    <form id="projectForm" name="updateproject">
+        <div class="project">
+            Project Id : <input type="text" id="pjtid" name="projectId" [(ngModel)]="project.projectId"> <br> <br> Project Name :<input type="text" name="projectName" id="pjtname" [(ngModel)]="project.projectName"> <br> <br> Project Start Date :
+            <input type="text" name="startDate" id="startdate" [(ngModel)]="project.startDate"> <br> <br> Project End Date :<input type="text" name="endDate" id="enddate" [(ngModel)]="project.endDate"> <br> <br>
+            <input type="button" Value="UPDATE PROJECT" (click)="updateProject()">
+        </div>
+    </form>
+    {{msg}}
+</div>
