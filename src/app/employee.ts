@@ -1,3 +1,6 @@
+import { Department } from "./department";
+import { Project } from "./project";
+
 export class Employee {
     employeeId:Number=0;
 	employeeName:String="";
@@ -7,7 +10,11 @@ export class Employee {
 	hireDate:String="";
 	jobTitle:String="";
 	salary:Number=0;
-	departmentId:Number=0;
-	projectId:Number=0;
+	department: Department = new Department;
+
+	projects: Project[] = [];
+	departmentId!: number;
+    projectIds: number[] = [];
+
     constructor(){}
 }

@@ -7,6 +7,15 @@ import{Employee} from './employee';
   providedIn: 'root'
 })
 export class EmployeeService {
+  addEmployee(formData: any) {
+    throw new Error('Method not implemented.');
+  }
+  getDepartments() {
+    throw new Error('Method not implemented.');
+  }
+  getProjects() {
+    throw new Error('Method not implemented.');
+  }
   private restUrl='http://localhost:1102/Employee';
   constructor(private httpClient:HttpClient) {}
   getEmployees():Observable<Employee[]>
