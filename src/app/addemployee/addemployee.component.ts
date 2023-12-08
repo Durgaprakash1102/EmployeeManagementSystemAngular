@@ -13,10 +13,6 @@ import { Project } from '../project';
 export class AddemployeeComponent implements OnInit {
   constructor(private employeeService:EmployeeService){}
   employee:Employee=new Employee();
-  department: Department = new Department;
-	projects: Project= new Project;
-	departmentId!: number;
-  projectIds: number[] = [];
   msg:any="";
   ngOnInit(): void {
       throw new Error("Method not implemented");

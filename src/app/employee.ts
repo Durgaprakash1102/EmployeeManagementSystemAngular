@@ -10,11 +10,12 @@ export class Employee {
 	hireDate:String="";
 	jobTitle:String="";
 	salary:Number=0;
-	department: Department = new Department;
-
-	projects: Project[] = [];
-	departmentId!: number;
-    projectIds: number[] = [];
+	department:{
+		departmentId:Number
+	}={departmentId:0};
+	project:{
+		projectId:Number
+	}={projectId:0};
 
     constructor(){}
 }

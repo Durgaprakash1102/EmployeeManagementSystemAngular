@@ -25,12 +25,8 @@
                 <td>{{employee.hireDate}}</td>
                 <td>{{employee.jobTitle}}</td>
                 <td>{{employee.salary}}</td>
-                <td>{{ employee.department.departmentId }}</td>
-                <td>
-                    <span *ngFor="let project of employee.projects">
-                    {{ project.projectId}}&nbsp;
-                  </span>
-                </td>
+                <td>{{employee.department.departmentId }}</td>
+                <td>{{employee.project.projectId}}</td>
 
             </tr>
         </tbody>

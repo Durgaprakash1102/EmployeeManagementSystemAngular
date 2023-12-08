@@ -10,13 +10,9 @@ import { Department } from '../department';
   templateUrl: './getemployees.component.html',
   styleUrls: ['./getemployees.component.css']
 })
-export class GetemployeesComponent {
+export class GetemployeesComponent implements OnInit {
   employees:Employee[]=[];
   employee:Employee=new Employee();
-  department: Department = new Department;
-	projects: Project[] = [];
-  departmentId: number | null = null;
-  projectIds: number[] = [];
   constructor(private employeeService:EmployeeService){}
   ngOnInit(): void {
       this.getAllEmployees();
